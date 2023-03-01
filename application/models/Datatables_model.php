@@ -14,6 +14,6 @@ class Datatables_model extends CI_Model {
             array('db' => 'staff_nama', 'dt' => 1)
         );
         $data = $this->ssp->simple($this->db, $_GET, $table, $primaryKey, $columns);
-        return $data;
+        return json_encode($data);
     }
 }

@@ -7,7 +7,7 @@
     <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
-    <table id="users-table" class="display" style="width:100%">
+    <table id="table" class="display" style="width:100%">
         <thead>
             <tr>
                 <th>NIK</th>
@@ -19,7 +19,7 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#users-table').DataTable({
+            $('#table').DataTable({
                 "processing": true,
                 "serverSide": true,
                 "ajax": "<?php echo base_url('datatables/datatables'); ?>"
